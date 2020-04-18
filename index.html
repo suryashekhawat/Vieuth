@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Vieuth">
+    <title>Vieuth</title>
+    <!-- Preloader -->
+    
+    <script src="https://kit.fontawesome.com/67e2ea6c63.js" crossorigin="anonymous"></script>
+
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/brand/Vieuth Favicon.png" type="image/png"><!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    
+    <!-- Go Pro -->
+    <!---Navbar -->
+    <nav class="navbar  navbar-expand-lg navbar-light bg-white navbar-sticky">
+        <div class="container-fluid">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                 <img src="./assets/img/brand/Vieuth PNG.png" class="img-fluid" >
+            </a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link scroll" href="#partners">Partners</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link scroll" href="#opportunities">Opportunities</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link scroll" href="#community">Community</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="about.html" target="_blank">Career</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link scroll" href="#contact">Contact US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #0e0b2b;">
+                            Business Enquires
+                        </a>
+                        
+                    </li>
+                </ul>
+                <!-- Button -->
+                
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Main content -->
+    <section class="slice py-7">
+        <div class="container">
+            <div class="row row-grid align-items-center">
+                <div class="col-12 col-md-5 col-lg-6 order-md-2 text-center">
+                    <!-- Image -->
+                    <figure class="w-100">
+                        <img alt="Image placeholder" src="assets/img/svg/illustrations/undraw_status_update.svg" class="img-fluid mw-md-120">
+                    </figure>
+                </div>
+                <div class="col-12 col-md-7 col-lg-6 order-md-1 pr-md-5">
+                    <!-- Heading -->
+                    <h1 class="display-5 text-center text-md-left mb-3">
+                        Join the Next Generation <strong class="text-primary">Community</strong>
+                    </h1>
+                    <!-- Text -->
+                    <p class="lead text-center text-md-left">
+                        Explore the world around you-<br> Apply to opportunities, learn from mentors.<br> Earn from tasks and find the job you love.
+                    </p>
+                    <!-- Buttons -->
+                    <div class="text-center text-md-left mt-6">
+                        <a href="#" class="btn btn-outline-primary btn-icon" target="_blank">
+                            <span class="btn-inner--text pl-2">Get Started</span>
+                            <span class="btn-inner--icon"><i data-feather="chevron-right"></i></span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice" style="background-color: #0e0b2b;">
+    <div class="container">
+        
+        <div class="row p-4">
+            <div class="col-lg-6 col-md-6 text-white ">
+
+              <div class=" ">
+                <h4 class="text-white">
+                    Looking for Opportunities?
+               </h4>
+                <p>Subscribe Vieuth to learn more about skilling yourself and exploring opportunities to learn, 
+                earn & grow.</p>  
+              </div>
+            </div>
+        
+             <div class="col-lg-6 col-md-6 ">
+                    <div class=" d-flex  align-items-center justify-content-center mt-4">
+                    
+                         <form class=" w-75" onsubmit="start()"> 
+                             <input class="form-control" placeholder="Email Id" type="Email" id="email">
+                         </form>
+                         <button class="btn btn-outline-white text-center ml-1">Suscribe</button> 
+                    </div> 
+                    
+                          
+            </div>
+             
+        </div>
+       
+    </div>
+            
+   </section>
+    
+    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+        <div class="container">
+            <h1 class="text-center headingclass text-dark"> What we offer?</h1>
+            <hr style="width: 50%;  border-width: 4px;">
+            <div class="d-flex p-3 mt-1 mb-3">
+                       </div>
+            
+            <!-- Title -->
+            <!-- Section title -->
+            <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-6">
+                    <h2 class=" mt-4"></h2>
+                    
+                </div>
+            </div>
+            <!-- Card -->
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="assets/img/svg/illustrations/undraw_Designer_by46.svg" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 text-center mb-3">Vieuth Opportunities</h5>
+                            <p class="text-muted mb-0">Apply to thousands of opportunities to learn, earn & grow. We have tired up with various MNC's and International Brands to augment your skills.</p>
+                            <button type="button" class="btn btn-outline-primary mt-4 w-100">Apply</button>
+                              
+                        </div> 
+                        
+                        
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="assets/img/svg/illustrations/undraw_agreement_aajr.svg" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3 text-center">Vieuth Partners</h5>
+                            <p class="text-muted mb-0">Leading Companies, Business Schools and Engineering Colleges partnered with us to regularly advertise about their job offerings and several opportunities.</p>
+                            <button type="button" class="btn btn-outline-primary w-100 mt-4"> Become a partner</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body pb-5">
+                            <div class="pt-4 pb-5">
+                                <img src="assets/img/svg/illustrations/undraw_community_8nwl.svg" class="img-fluid img-center" style="height: 150px;" alt="Illustration" />
+                            </div>
+                            <h5 class="h4 lh-130 mb-3 text-center">Vieuth Community</h5>
+                            <p class="text-muted mb-0">The next big thing is the Community. A friendly community of millions of young minds & hustler awaits. We believe in the power of togetherness.
+                                
+                            </p>
+                            <button type="button" class="btn btn-outline-primary mt-4 w-100">Explore Community</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="slice slice-lg bg-section-secondary" id="opportunities">
+        <h1 class="text-center headingclass text-dark"> Explore us more</h1>
+        <hr style="width: 50%;  border-width: 4px;">
+        <div class="container">
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <h5 class="">Vieuth Opportunities</h5>
+                        <h1 class="display-4"> Grow your career</h1>
+                        <p class="lead my-4">
+                            Vieuth is the Next Generation Community that engages the students of B-Schools, Engineering Colleges and other colleges with million+ opportunities across the globe.<br><br>  It's a one-stop-shop to meet the needs of students during their academic journey. It helps you to apply for opportunities. Learn from Mentors, Earn from tasks and find a job you love.
+                        </p>
+                        <div class="d-flex align-content-start justify-content-start mt-5">
+                              <div class="mr-3 ">
+                                <button type="button" class="btn btn-outline-primary ">Find an opportunity</button>
+                                </div>
+                                <div class="ml-3">
+                                <button type="button" class="btn btn-outline-primary">Post an opportunity </button>
+                                </div>
+                        </div>
+                          
+                        
+                    </div>
+                
+                    <div class="col-lg-6 order-lg-1">
+                        <div class=" mb-0 mr-lg-5">
+                            <div class="">
+                                <img alt="Image placeholder" src="assets/img/svg/illustrations/big-launch.svg" class="img-fluid ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 50%;  border-width: 4px;">
+            <div class="py-6" id="partners">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5" id="partner">
+                        <h5 class="">Vieuth Partners</h5>
+                        <h1 class="display-4"> Engage your brand</h1>
+                        <p class="lead my-4">
+                            For Partners, Vieuth enables leading brands to engage with the students community in the most interactive way to discover, measure and hire the best talent to fulfill all their objectives.
+                        </p>
+                        <br>
+                        <p class="lead"> Vieuth conceptualizes unique engagements to enhance the company's brand visibility, brand engagement and brand equity across campuses in India by leveraging Vieuth’s student network and executing enriching digital and on-ground campaigns.</p>
+                        <div class="d-flex align-content-start justify-content-start mt-5">
+                            <div class="mr-3">
+                            <button type="button" class="btn btn-outline-primary">Become a partner</button>
+                            </div>
+                            <div class="ml-3">
+                            <button type="button" class="btn btn-outline-primary">Suggest a partner</button>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class=" mb-0 ml-lg-5">
+                            
+                                <img alt="Image placeholder" src="assets/img/svg/illustrations/team_meeting.svg" class="img-fluid">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg bg-section-dark pt-5 pt-lg-8" id="community">
+        <!-- SVG separator -->
+        <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+                <polygon points="2560 0 2560 100 0 1000"></polygon>
+            </svg>
+        </div>
+        <!-- Container -->
+        <div class="container position-relative ">
+            <div class="col">
+                <h4 class="mb-3 text-white text-center">Vieuth Community</h4>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 text-center">
+                        <div class="mt-4 mb-6">
+                            <h2 class="h1 text-white">
+                                Discover the power of young minds and hustlers!
+                            </h2>
+                            
+                            <!-- Play button -->
+                            <a href="#" class="btn btn-outline-white btn-icon mt-5">Explore Community</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg bg-section-primary" id="contact">
+        <div class="container mb-6">
+            <h3 class="mb-4 text-center p-3">Wanna get in touch? Let's Talk</h3>
+            <!-- Form here -->
+            <div class="row align-items-start">
+                 
+                <div class="col-lg-6 mt-4">
+                    
+                    <div class="">
+                      <p> For queries like</p>
+                        <p><strong class="text-dark" >1.</strong> To know more about Vieuth and our goals.</p>
+                       <p> <strong class="text-dark" >2.</strong> To Know how we can conceptualize and market to execute opportunities and other campaigns.</p>
+                    
+                    <p> <strong class="text-dark" >3.</strong> To know how to partner with us for an opportunity.</p> 
+                    
+                    <p class="bold">Reach us at <a href="mailto:hello@vieuth.com" class="text-danger mt-3">hello@vieuth.com</a></p>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 align-items-center">
+                    
+                    <div class=" justify-content-center">
+                    <form method="post" action="send_email.php" >
+                        <div class="form-group">
+                            <div class="row">
+                              <div class="col">
+                               <input type="text" class="form-control" placeholder="First_name" id="name">
+                               </div>
+                                <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                        
+                        </div>
+                        
+                        <div class="form-group">
+                          
+                          <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          
+                            <input type="text" class="form-control" id="phone" placeholder="Contact No">
+                          </div>
+                        <div class="form-group">
+                          
+                            <input type="text" class="form-control" id="organisation" placeholder="Organisation">
+                          </div>
+                          
+                        <div class="form-group">
+                            
+                            
+                                <textarea class="form-control" rows="5" id="message" placeholder="Whats on your mind?"></textarea>
+                              
+                        </div>
+    
+                        <button type="submit" class="btn btn-outline-primary w-100 ">Send <i class="far fa-paper-plane"></i></button>
+                      </form>
+                      </div>
+
+
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="position-relative" id="footer-main">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0e0b2b" fill-opacity="1" d="M0,192L60,213.3C120,235,240,277,360,282.7C480,288,600,256,720,218.7C840,181,960,139,1080,128C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+       
+        <div class="footer bg-dark footer-dark">
+            <!-- SVG shape -->
+              <!-- Footer -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-6 mb-lg-0">
+                        <div class="d-flex justify-content-start">
+                        <a href="index.html">
+                            <img src="./assets/img/brand/black bg.png"  class="img-fluid" height="150px" width="150px">
+                        </a>
+                        </div>
+                        <p class=" pl-3">Follow us on:</p>
+                        <!-- Social -->
+                        <div class="d-flex justify-content-start">
+                        <ul class="nav">
+                          
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href=" https://www.instagram.com/vieuthcom/
+                                " target="_blank">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href=" https://twitter.com/vieuthcom
+                                " target="_blank">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="  https://www.facebook.com/vieuth
+                                " target="_blank">
+                                    <i class="fab fa-facebook-f fa-2x"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="  https://www.linkedin.com/company/vieuth/
+                                " target="_blank">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                            </li>
+                            
+                                
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-3 ml-lg-auto mb-2 mb-lg-0">
+                        <h6 class="heading mb-3">About Us</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Who we are</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Career</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-3 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">We Offer</h6>
+                        <ul class="list-unstyled">
+                            
+                            <li><a href="#">Find Opportunities</a></li>
+                            <li><a href="#">Partner with us</a></li>
+                            <li><a href="#">Join community</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-3 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Resources</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Branding Kit</a></li>
+                            <li><a href="#">Blog</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-3 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Contact Us</h6>
+                        <ul class="list-unstyled">
+                            
+                            <li><a href="#">Subscribe Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            
+                        </ul>
+                    </div>
+
+                </div>
+                <hr class="divider divider-fade divider-dark my-4">
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-12">
+                        <div class="copyright text-sm font-weight-bold text-center">
+                            &copy; 2020 <a href="index.html" class="font-weight-bold" target="_blank">VIEUTH</a>. All rights reserved
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-md-6">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Terms
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Sitemap 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core JS  -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+    <script src="assets/js/scroll.min.js" type="text/javascript"></script>
+    <script>
+
+    $('.nav-link').on('click',function() {
+     $('.navbar-collapse').collapse('hide');
+     });
+    </script>
+     
+    <!-- Quick JS -->
+    
+    <!-- Feather Icons -->
+
+</body>
+
+</html>
