@@ -24,7 +24,7 @@ fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSfiAtchu3iqUzlMk1J-uEpFwTd1K
   },
   "referrer": "https://docs.google.com/forms/d/e/1FAIpQLSfiAtchu3iqUzlMk1J-uEpFwTd1KJTbRqpbDVhharnu77uPEw/viewform?fbzx=-5508625085048224709",
   "referrerPolicy": "no-referrer-when-downgrade",
-  "body": "a&draftResponse=%5Bnull%2Cnull%2C%22-5508625085048224709%22%5D%0D%0A&pageHistory=0&fbzx=-5508625085048224709",
+  "body": ""+a.value+"&draftResponse=%5Bnull%2Cnull%2C%22-5508625085048224709%22%5D%0D%0A&pageHistory=0&fbzx=-5508625085048224709",
   "method": "POST",
   "mode": "cors",
   "credentials": "include"
